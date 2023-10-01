@@ -1,5 +1,5 @@
 # Lecturer: Mrs. Maria Agustin
-Lectures held on every Wednesday at 08:00 p.m. WIB
+Lectures are held hybirdly every Wednesday at 08.00 a.m. (WIB) depending on the situation and conditions.
 
 # Languages
 - Basic HTML
