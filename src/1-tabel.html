@@ -1,0 +1,80 @@
+<!-- Tugas Web 1 -->
+<!-- Author: Wahyu Priambodo / 2207421048 / TMJ 3B -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Wahyu Priambodo">
+  <meta name="keywords" content="Membuat Tabel">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Web 1 - Tabel</title>
+  <style>
+    table {
+      width: 15em;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    caption {
+      font-family: Arial;
+      font-size: 1em;
+      margin-top: 5px;
+    }
+
+    th {
+      padding: 5px;
+      color: white;
+    }
+
+    td {
+      padding: 5px;
+      text-align: center;
+    }
+
+    #tbl1 th, #tbl2 th {
+      background-color: rgb(50, 130, 209);
+    }
+
+    /* set warna untuk tbl header ganjil */
+    tr:nth-child(odd) {
+      background-color: #ffffff;
+    }
+
+    /* set warna untuk tbl header genap */
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+  <table border="1" id="tbl1">
+    <caption align="bottom">Table 1. Penomoran kolom</caption>
+    <tr>
+        <th>1</th>
+        <th>2</th>
+        <th>3</th>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>5</td>
+        <td>6</td>
+    </tr>
+    <tr>
+        <td>7</td>
+        <td>8</td>
+        <td>9</td>
+    </tr>
+</table>
+
+<table border="1" id="tbl2">
+  <caption align="bottom">Table 2. Penyebutan nomor</caption>
+  <tr>
+    <th colspan="2">Satu</th>
+  </tr>
+  <tr>
+    <td>Dua</td>
+    <td>Tiga</td>
+  </tr>
+</table>
+</body>
+</html>
