@@ -1,0 +1,199 @@
+<!-- Tugas Web 2 -->
+<!-- Author: Wahyu Priambodo / 2207421048 / TMJ 3B -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Wahyu Priambodo">
+  <meta name="keywords" content="Membuat List">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Web 2 - List</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+    body {
+      font-family: 'Poppins', sans-serif, Arial;
+      background-color: #F6F8FD;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    
+    /* Style the main content container with spacing */
+    #unordered-list, #ordered-list, #list-menu {
+      background-color: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 5px;
+      padding: 20px;
+      text-align: left;
+      width: 80%;
+      max-width: 600px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      margin: 10px; /* Add margin for spacing between boxes */
+    }
+    
+    /* Style headers */
+    h1, h2 {
+      text-align: center;
+      color: #333;
+    }
+    
+    /* Style list items */
+    ul, ol {
+      margin: 0;
+      padding: 0 0 0 20px;
+    }
+    
+    /* Style list menu items */
+    menu li {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    /* Highlight the strong tags within list items */
+    li strong {
+      font-weight: 500;
+      color: #007bff;
+    }    
+    
+  </style>
+</head>
+<body>
+  <!-- Unordered List -->
+  <div id="unordered-list">
+    <h1>Unordered List</h1>
+    <!-- Contoh unorder list tidak bercabang -->
+    <b>Daftar Brand Mobil Populer</b>
+    <ul>
+      <li>Toyota 🇯🇵</li>
+      <li>Mazda 🇯🇵</li>
+      <li>Suzuki 🇯🇵</li>
+      <li>Honda 🇯🇵</li>
+      <li>Mitsubishi 🇯🇵</li>
+      <li>Nissan 🇯🇵</li>
+      <li>BMW 🇩🇪</li>
+      <li>Mercedes-Benz 🇩🇪</li>
+      <li>Audi 🇩🇪</li>
+      <li>Volvo 🇺🇦</li>
+      <li>Hyundai 🇰🇷</li>
+      <li>KIA 🇰🇷</li>
+    </ul>
+    <hr>
+    <br>
+    
+    <!-- Contoh unorder list bercabang (nested unordered list) -->
+    <b>Tipe-tipe Bahasa Pemrograman</b>
+    <ul>
+      <li type="circle">High-level Language:</li>
+      <ul>
+        <li type="square">JavaScript</li>
+        <li type="square">Python</li>
+        <li type="square">Java</li>
+        <li type="square">Ruby</li>
+        <li type="square">PHP</li>
+      </ul>
+      <li type="circle">Low-level Language:</li>
+      <ul>
+        <li type="disc">Assembly</li>
+        <li type="disc">C</li>
+        <li type="disc">COBOL</li>
+        <li type="disc">Fortran</li>
+      </ul>
+    </ul>
+  </div>
+
+  <!-- Ordered List -->
+  <div id="ordered-list">
+    <h1>Ordered List</h1>
+    <!-- Contoh order list tidak bercabang -->
+    <b>Langkah-langkah Memasak Indomie Goreng:</b>
+    <ol>
+      <li>Tuangkan air dalam panci dan panaskan hingga mendidih</li>
+      <li>Setelah air mendidih, masukkan Indomie goreng pilihan Anda ke dalam panci</li>
+      <li>Biarkan mie merebus dalam air mendidih selama sekitar 2-3 menit</li>
+      <li>Setelah mie matang, saring airnya menggunakan saringan</li>
+      <li>Setelah mie disaring, tambahkan bumbu yang disediakan oleh Indomie</li>
+      <li>Aduk mie dengan bumbu hingga bumbu merata tercampur dan menempel pada mie</li>
+      <li>Indomie siap disajikan, Anda dapat menambahkan toping seperti telur rebus, ayam goreng, sayuran, atau irisan bawang merah sesuai selera</li>
+    </ol>
+    <hr>
+    <br>
+
+    <!-- Contoh order list bercabang (nested ordered list) -->
+    <b>Daftar Tempat Wisata/Rekreasi di Bali &mdash; Dengan Huruf Kapital:</b>
+    <ol type="A">
+      <li>Pantai Kuta</li>
+      <li>Pura Tanah Lot</li>
+      <li>Gunung Batur</li>
+      <li>Museum Puri Lukisan</li>
+      <li>Pasar Ubud</li>
+      <li><em>Sacred Monkey Forest Sanctuary</em></li>
+      <li><em>Kecak Dance Performances</em></li>
+    </ol>
+    <br>
+    <b>Daftar Tempat Wisata/Rekreasi di Bali &mdash; Dengan Angka Romawi:</b>
+    <ol type="I">
+      <li>Pantai Kuta</li>
+      <li>Pura Tanah Lot</li>
+      <li>Gunung Batur</li>
+      <li>Museum Puri Lukisan</li>
+      <li>Pasar Ubud</li>
+      <li><em>Sacred Monkey Forest Sanctuary</em></li>
+      <li><em>Kecak Dance Performances</em></li>
+    </ol>
+    <hr>
+    <br>
+
+    <!-- Penggunaan atribut `start` -->
+    <b>5 Kota Besar di Pulau Jawa:</b>
+    <ol type="a">
+      <li>Tangerang</li>
+      <li>Jakarta</li>
+      <li>Bandung</li>
+      <li>Semarang</li>
+    </ol>
+    <br>
+    <b>5 Kota Besar di Pulau Jawa &mdash; Mulai di urutan ke-5:</b>
+    <ol type="a" start="5">
+      <li>Yogyakarta</li>
+      <li>Surabaya</li>
+      <li>Malang</li>
+    </ol>
+    <hr>
+    <br>
+
+    <!-- Penggunaan atribut `value` -->
+    <b>Klasemen Liga 1 Indonesia Grup A &mdash; Value berbeda-beda:</b>
+    <ol>
+      <li value="5">Match 5: Persija Jakarta vs Persib Bandung <strong>(4-3)</strong></li>
+      <li value="7">Match 7: PSIS Semarang vs RANS Nusantara FC <strong>(1-2)</strong></li>
+      <li value="10">Match 10: Bali United FC vs PS Barito Putera <strong>(2-3)</strong></li>
+      <li>On Going...</li>
+    </ol>
+    <br>
+    <b>Klasemen Liga 1 Indonesia Grup C &mdash; Value berbeda-beda:</b>
+    <ol>
+      <li value="2">Match 2: Persebaya Surabaya vs Arema FC <strong>(2-4)</strong></li>
+      <li value="4">Match 4: Persik Kediri vs PSM Makassar <strong>(1-1)</strong></li>
+      <li value="8">Match 8: Madura United vs Dewa United <strong>(3-1)</strong></li>
+      <li>On Going...</li>
+    </ol>
+  </div>
+
+  <!-- Menu -->
+  <div id="list-menu">
+    <h2>MeFood's</h2>
+    <!-- By default, <menu> menggunakan urutan tak bernomor (unorder list) -->
+    <b>Daftar Menu Makanan:</b>
+    <menu>
+      <li>Mie Ayam: <strong>Rp12.500</strong></li>
+      <li>Bakso: <strong>Rp13.000</strong></li>
+      <li>Pecel Lele: <strong>Rp15.000</strong></li>
+      <li>Soto Ayam: <strong>Rp15.000</strong></li>
+    </menu>
+  </div>
+</body>
+</html>
