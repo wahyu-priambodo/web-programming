@@ -1,0 +1,176 @@
+<!-- Tugas Web 3 -->
+<!-- Author: Wahyu Priambodo / 2207421048 / TMJ 3B -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="author" content="Wahyu Priambodo">
+  <meta name="keywords" content="Membuat Layout">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tugas Web 3 - Layout</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap');
+    /* Reset default margin and padding */
+    body, h1, h2, ul {
+      font-family: 'Poppins', sans-serif, Arial;
+      margin: 0;
+      padding: 0;
+    }
+    
+    /* Style the header section */
+    header {
+      display: flex;
+      flex-direction: column; /* Mengubah arah tampilan menjadi vertikal */
+      align-items: center; /* Mengatur posisi teks secara tengah */
+      background-color: #333;
+      color: white;
+      padding: 10px;
+    }
+
+    header .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+
+    header .subtitle {
+      font-size: 14px;
+    }
+    
+    /* Style the main content section */
+    .container {
+      display: flex;
+    }
+    
+    .container #left {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    main {
+      background-color: #f4f4f4;
+      padding: 20px;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    iframe { width: 100%; }
+    
+    ul { list-style-type: none; }
+    
+    ul li { margin: 10px 0; }
+    
+    /* Style the navigation menu section */
+    .container #right {
+      flex: 1;
+      padding: 20px;
+    }
+    
+    nav {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+    
+    nav h1 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    
+    nav ul { list-style-type: none; }
+    
+    nav ul li { margin: 10px 0; }
+    
+    /* Style the footer section */
+    footer {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    
+    #links a {
+      margin-right: 10px;
+    }
+    
+    /* Change the color of links in the nav and footer to white */
+    nav a,
+    footer p a {
+      color: white; /* Set the color to white */
+      text-decoration: none; /* Remove underlines from links */
+    }
+
+    /* Add hover effect to links */
+    nav a:hover,
+    footer p a:hover {
+      color: cyan; /* Change the color to blue when hovered */
+    }
+
+    p {
+      font-size: 14px;
+    }
+  </style>
+  <!-- End page style -->
+</head>
+<body>
+  <!-- Header section -->
+  <header>
+    <div id="top" class="title">Linux Lover Blog</div>
+    <div id="bottom" class="subtitle"><em>Seorang Linux & open-source enthusiast yang suka nongkrong bareng sesepuh</em>.</div>
+  </header>
+
+  <!-- Main content & Navigration menu section -->
+  <div class="container">
+    <!-- Main content section -->
+    <div id="left">
+      <main>
+        <h1>Latest Posts</h1>
+        <iframe src="https://giphy.com/embed/3og0ICG4WxdKSRzE3K" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
+        <ul>
+          <li><a href="https://www.belajarlinux.org/mengenal-linux/">Mengenal Linux</a></li>
+          <li><a href="https://www.dicoding.com/blog/apa-itu-open-source/">Mengenal Open-source</a></li>
+          <li><a href="https://www.petanikode.com/git-untuk-pemula/">Mengenal Git</a></li>
+          <li><a href="https://www.dicoding.com/blog/apa-itu-github/">Mengenal Github</a></li>
+          <li><a href="https://www.petanikode.com/markdown-pemula/">Mengenal Markdown</a></li>
+        </ul>
+      </main>
+    </div>
+
+    <!-- Navigation menu section -->
+    <div id="right">
+      <nav>
+        <h1>Navigation Menu</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="./about.html" target="_blank">About Me</a></li>
+          <li><a href="https://wa.me/6285777414254" target="_blank">Contact Me (via WhatsApp)</a></li>
+          <li><a href="https://www.facebook.com/groups/linuxidn/?mibextid=oMANbw" target="_blank">Join Facebook Community</a></li>
+          <li><a href="https://github.com/wahyu-priambodo" target="_blank">My Open-Source Projects</a></li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <!-- Footer section -->
+  <footer>
+    <!-- Social media links -->
+    <h1>Follow My Social Media</h1>
+    <div id="links">
+      <a href="mailto:wahyupriambodo.net@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?&logo=gmail&logoColor=white" alt="Gmail"/></a>
+      <a href="https://www.linkedin.com/in/wahyu-priambodo-tik22"><img src="https://img.shields.io/badge/Wahyu_Priambodo-%230077B5.svg?&logo=linkedin&logoColor=white" alt="LinkedIn" alt="LinkedIn"/></a>
+      <a href="https://github.com/wahyu-priambodo"><img src="https://img.shields.io/badge/wahyu_priambodo-%23121011.svg?&logo=github&logoColor=white" alt="Github"/></a>
+      <a href="https://www.youtube.com/@wahyupriambodo6985"><img src="https://img.shields.io/badge/Wahyu_Priambodo-%23FF0000.svg?&logo=YouTube&logoColor=white" alt="YouTube"/></a><br>
+      <a href="https://www.instagram.com/w4h0yuz/"><img src="https://img.shields.io/badge/@w4h0yuz-%23E4405F.svg?&logo=Instagram&logoColor=white" alt="Instagram"/></a>
+      <a href="https://twitter.com/w4h0yuz"><img src="https://img.shields.io/badge/@w4h0yuz-%231DA1F2.svg?&logo=Twitter&logoColor=white" alt="Twitter"/></a>
+      <a href="https://discordapp.com/users/689915341429932032"><img src="https://img.shields.io/badge/w4hoyuz-%235865F2.svg?&logo=discord&logoColor=white" alt="Discord"/></a>
+      <a href="https://www.facebook.com/w4h0yuz/"><img src="https://img.shields.io/badge/Wahyu_Priambodo-%231877F2.svg?&logo=Facebook&logoColor=white" alt="Facebook"/></a>
+    </div>
+    
+    <p>Copyright &copy;2023 &mdash; Made with ❤️ by Wahyu Priambodo a.k.a <a href="https://github.com/nullfriendz">w4h0yuz</a>.</p>
+  </footer>
+</body>
+</html>
