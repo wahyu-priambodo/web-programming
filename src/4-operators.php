@@ -1,3 +1,5 @@
+<!-- Tugas Web 4 -->
+<!-- Author: Wahyu Priambodo / 2207421048 / TMJ 3B -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -193,14 +195,29 @@
   ?>
   </p>
 
-  <h1>8. Operator Kontrol Error <em>(Error Control)</em></h1>
+  <h1>8. Operator Ternary</h1>
   <p>
   <?php
-  const pi = 3.14;
+  $like = true;
 
+  // menggunakan operator ternary
+  $ans = $like ? "iya" : "tidak";
+
+  // menampilkan jawaban
+  echo "Jawaban: $ans <br />";
+  ?>
+  </p>
+
+  <h1>9. Operator Kontrol Error <em>(Error Control)</em></h1>
+  <p>
+  <?php
+  error_reporting(E_ALL);
+  ini_set('display_errors', 1);
+  // const pi = 3.14;
+  
   $a = pi;
-  $res = @tan ($a) or die("terdapat kesalahan, yaitu '$php_errormsg'");
-  echo "\$res = $res <br>";
+  $res = tan ($a) or die("terdapat kesalahan, yaitu '$php_errormsg'");
+  echo "\$res = $res <br />"; // muncul error jika konstanta pi tidak didefinisikan
   ?>
   </p>
 </body>
